@@ -1,0 +1,337 @@
+﻿<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#17080b">
+  <meta name="description" content="Sau Lớp Phấn Màu – triển lãm số và sách lật tương tác khám phá nghệ thuật Hát Bội Việt Nam và Hát Bội Vĩnh Long, với trọng tâm Gánh Hát Bội Đồng Thinh tại Công Thần Miếu.">
+  <title>Sau Lớp Phấn Màu | Hát Bội Vĩnh Long</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient-noise" aria-hidden="true"></div>
+  <header class="topbar">
+    <div class="read-progress" aria-hidden="true"><span id="readProgressBar"></span></div>
+    <a class="brand" href="#top" aria-label="Sau Lớp Phấn Màu - về đầu trang">
+      <span class="brand-seal">H<span>B</span></span>
+      <span class="brand-copy"><strong>SAU LỚP PHẤN MÀU</strong><small>HÁT BỘI · VĨNH LONG · ĐỒNG THINH</small></span>
+    </a>
+    <div class="top-actions">
+      <nav class="desktop-nav" aria-label="Điều hướng chính">
+        <a href="#book-section" data-ui="navBook">Cuốn sách</a>
+        <a href="#hat-boi-language" data-ui="navLanguage">Ngôn ngữ Hát Bội</a>
+        <a href="#face-decoder" data-ui="navDecoder">Giải mã sắc diện</a>
+        <a href="#mask-studio" data-ui="navStudio">Xưởng vẽ mặt</a>
+        <a href="#vinh-long-focus" data-ui="navLocal">Hát Bội Vĩnh Long</a>
+        <a href="#visitor-voices" data-ui="navVoices">Cảm nghĩ</a>
+      </nav>
+      <label class="language-wrap" for="languageSelect"><span class="sr-only" data-ui="language">Ngôn ngữ</span>
+        <select id="languageSelect" aria-label="Chọn ngôn ngữ">
+          <option value="vi">VI · Tiếng Việt</option>
+          <option value="en">EN · English</option>
+          <option value="fr">FR · Français</option>
+        </select>
+      </label>
+      <button class="quiet-button" id="closeCurtainBtn" type="button" data-ui="closeCurtain" hidden>Đóng màn</button>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="mobileMenu" aria-label="Mở menu"><span></span><span></span></button>
+    </div>
+  </header>
+  <div class="mobile-menu" id="mobileMenu" hidden>
+    <a href="#book-section" data-ui="navBook">Cuốn sách</a>
+    <a href="#hat-boi-language" data-ui="navLanguage">Ngôn ngữ Hát Bội</a>
+    <a href="#face-decoder" data-ui="navDecoder">Giải mã sắc diện</a>
+    <a href="#mask-studio" data-ui="navStudio">Xưởng vẽ mặt</a>
+    <a href="#vinh-long-focus" data-ui="navLocal">Hát Bội Vĩnh Long</a>
+    <a href="#visitor-voices" data-ui="navVoices">Cảm nghĩ</a>
+  </div>
+
+  <main id="top">
+    <section class="intro-band" aria-labelledby="siteTitle">
+      <div class="intro-ornament intro-ornament--left" data-depth="0.08" aria-hidden="true">✦</div>
+      <div class="intro-ornament intro-ornament--right" data-depth="0.13" aria-hidden="true">❖</div>
+      <p class="eyebrow" data-ui="eyebrow">TRIỂN LÃM SỐ &amp; SÁCH LẬT DI SẢN · DIGITAL HERITAGE EXHIBITION</p>
+      <h1 id="siteTitle" class="headline-reveal"><span data-ui="headline">Sau Lớp Phấn Màu</span></h1>
+      <p class="intro-copy" data-ui="introCopy">Khám phá nghệ thuật Hát Bội Việt Nam qua ngôn ngữ mặt nạ, phục trang, nhịp trống và câu chuyện gìn giữ di sản tại Vĩnh Long.</p>
+      <div class="intro-actions">
+        <a class="hero-pill hero-pill--primary" href="#book-section" data-ui="heroBookCta">Mở sách tương tác</a>
+        <a class="hero-pill" href="#hat-boi-language" data-ui="heroExploreCta">Khám phá ngôn ngữ Hát Bội</a>
+      </div>
+      <div class="intro-rule"><span></span><i>✧</i><span></span></div>
+    </section>
+
+    <section class="theater is-closed" id="book-section" aria-label="Sân khấu sách lật Hát Bội">
+      <div class="stage-light stage-light--one" data-depth="0.1" aria-hidden="true"></div>
+      <div class="stage-light stage-light--two" data-depth="0.17" aria-hidden="true"></div>
+      <div class="stage-star star-a" data-depth="0.22" aria-hidden="true">✦</div>
+      <div class="stage-star star-b" data-depth="0.12" aria-hidden="true">✧</div>
+      <div class="stage-star star-c" data-depth="0.18" aria-hidden="true">❖</div>
+      <div class="stage-header">
+        <span data-ui="stageLabel">HÁT BỘI · TỪ NGHỆ THUẬT ĐẾN CÂU CHUYỆN ĐỊA PHƯƠNG</span>
+        <span class="stage-location">CÔNG THẦN MIẾU · VĨNH LONG</span>
+      </div>
+
+      <div class="book-shell" id="bookShell">
+        <div class="book-shadow" aria-hidden="true"></div>
+        <div class="book" id="book" aria-label="Sách lật Hát Bội">
+          <div class="book-spread" id="bookSpread"></div>
+          <div class="page-sheet" id="pageSheet" aria-hidden="true"></div>
+          <div class="spine-glow" aria-hidden="true"></div>
+        </div>
+      </div>
+
+      <div class="curtain curtain--left" aria-hidden="true"><div class="curtain-folds"></div><div class="curtain-trim"></div></div>
+      <div class="curtain curtain--right" aria-hidden="true"><div class="curtain-folds"></div><div class="curtain-trim"></div></div>
+      <div class="curtain-valance" aria-hidden="true"><span>✦　❖　✧　❖　✦</span></div>
+      <button class="open-stage magnetic" id="openCurtainBtn" type="button">
+        <span class="open-stage-ring"><span class="open-stage-icon">✦</span></span>
+        <strong data-ui="openStage">MỞ MÀN</strong>
+        <small data-ui="openHint">CHẠM ĐỂ BẮT ĐẦU HÀNH TRÌNH</small>
+      </button>
+
+      <div class="book-controls" id="bookControls" aria-label="Điều khiển lật sách">
+        <button class="page-nav" id="prevPage" type="button" aria-label="Trang trước" disabled><span>←</span><b data-ui="previous">TRANG TRƯỚC</b></button>
+        <div class="page-status">
+          <span id="pageCount">01 — 02 / 13</span>
+          <div class="progress-track"><span id="progressBar"></span></div>
+          <small data-ui="turnHint">Dùng phím mũi tên hoặc vuốt để lật trang</small>
+        </div>
+        <button class="page-nav" id="nextPage" type="button" aria-label="Trang tiếp theo"><b data-ui="next">TRANG SAU</b><span>→</span></button>
+      </div>
+      <div class="book-chapters" id="bookChapters" aria-label="Mục lục nhanh cuốn sách"></div>
+    </section>
+
+    <!-- Scrollytelling Exhibition inspired by Google Arts & Culture -->
+    <section class="exhibition-section reveal-on-scroll" id="hat-boi-language" aria-label="Giải mã sắc diện">
+      <!-- Cinema & Craft Showcase -->
+      <div class="craft-showcase">
+        <div class="craft-cinema">
+          <div class="cinema-frame">
+            <video controls playsinline preload="metadata" poster="assets/hatboi-motion-poster.webp">
+              <source src="assets/Video. Nhịp Trống &amp; Chuyển Động.MOV" type="video/mp4">
+              <source src="assets/hatboi-motion.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="cinema-copy">
+            <p class="eyebrow" data-ui="cinemaEyebrow">CHUYỂN ĐỘNG &amp; NHỊP TRỐNG</p>
+            <h3 data-ui="cinemaTitle">Bộ pháp, ánh nhìn và nhịp phách sân khấu</h3>
+            <p data-ui="cinemaDesc">Từ cái phất tay áo, bước đi khoan thai đến tiếng trống chiến dồn dập, mọi chuyển động trong Hát Bội đều được ước lệ hóa để mở ra cả một không gian tưởng tượng.</p>
+          </div>
+        </div>
+
+        <div class="craft-grid">
+          <figure class="craft-card">
+            <img src="assets/battle-scene.webp" alt="Cảnh giao tranh và bộ pháp sân khấu Hát Bội" loading="lazy">
+            <figcaption><strong data-ui="craft1Title">Bộ pháp giao tranh</strong><span data-ui="craft1Desc">Thế võ và vũ đạo cách điệu trên sân khấu ước lệ.</span></figcaption>
+          </figure>
+          <figure class="craft-card">
+            <img src="assets/costume-ensemble.webp" alt="Bộ phục trang và mũ mão Hát Bội truyền thống" loading="lazy">
+            <figcaption><strong data-ui="craft2Title">Phục trang &amp; Mũ mão</strong><span data-ui="craft2Desc">Họa tiết thêu tay định danh phẩm trật và thân phận nhân vật.</span></figcaption>
+          </figure>
+          <figure class="craft-card">
+            <img src="assets/makeup-blue-mirror.webp" alt="Nghệ sĩ Hát Bội soi gương hóa trang sắc xanh" loading="lazy">
+            <figcaption><strong data-ui="craft3Title">Khoảnh khắc hóa thân</strong><span data-ui="craft3Desc">Sự tĩnh lặng trước gương khi người nghệ sĩ bước vào vai diễn.</span></figcaption>
+          </figure>
+          <figure class="craft-card">
+            <img src="assets/performer-pair.webp" alt="Hai nghệ sĩ Hát Bội đối diễn trên sân khấu" loading="lazy">
+            <figcaption><strong data-ui="craft4Title">Đối diễn &amp; Tung hứng</strong><span data-ui="craft4Desc">Nhịp tương tác ăn ý giữa các tuyến nhân vật.</span></figcaption>
+          </figure>
+          <figure class="craft-card">
+            <img src="assets/performer-red.webp" alt="Nghệ sĩ Hát Bội trong trang phục sắc đỏ" loading="lazy">
+            <figcaption><strong data-ui="craft5Title">Thần thái sắc đỏ</strong><span data-ui="craft5Desc">Uy nghi và khí phách qua từng đường nét phục trang.</span></figcaption>
+          </figure>
+          <figure class="craft-card craft-card--contain">
+            <img src="assets/warrior-cutout.webp" alt="Tạo hình võ tướng Hát Bội" loading="lazy">
+            <figcaption><strong data-ui="craft6Title">Tạo hình võ tướng</strong><span data-ui="craft6Desc">Dáng đứng, cờ lệnh và thế bộ chuẩn mực của vai võ.</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- New Interactive Section 1: Giải mã sắc diện -->
+    <section class="decoder-section reveal-on-scroll" id="face-decoder" aria-labelledby="decoderTitle">
+      <div class="section-heading">
+        <p class="eyebrow" data-ui="decoderEyebrow">TƯƠNG TÁC · GIẢI MÃ SẮC DIỆN</p>
+        <h2 id="decoderTitle" data-ui="decoderTitle">Giải mã sắc diện</h2>
+        <p class="section-lead" data-ui="decoderLead">Lọc khuôn mặt theo màu sắc để khám phá ý nghĩa từng lớp phấn, đặc điểm nhận dạng trên gương mặt và tuyến vai tương ứng trong Hát Bội.</p>
+      </div>
+
+      <div class="decoder-filters" id="decoderFilters" role="tablist" aria-label="Lọc khuôn mặt theo màu">
+        <button class="filter-chip is-active" type="button" data-color="all" data-ui="filterAll">Tất cả</button>
+        <button class="filter-chip" type="button" data-color="red"><span class="chip-dot" style="background:#b81d24"></span><span data-ui="filterRed">Đỏ · Trung nghĩa</span></button>
+        <button class="filter-chip" type="button" data-color="fire"><span class="chip-dot" style="background:#d96b27"></span><span data-ui="filterFire">Hỏa · Uy nghi</span></button>
+        <button class="filter-chip" type="button" data-color="white"><span class="chip-dot" style="background:#f3ede0"></span><span data-ui="filterWhite">Trắng · Đa diện</span></button>
+        <button class="filter-chip" type="button" data-color="black"><span class="chip-dot" style="background:#1c191b"></span><span data-ui="filterBlack">Đen · Cương trực</span></button>
+        <button class="filter-chip" type="button" data-color="green"><span class="chip-dot" style="background:#256b53"></span><span data-ui="filterGreen">Xanh · Siêu nhiên</span></button>
+      </div>
+
+      <div class="decoder-layout">
+        <div class="decoder-grid" id="decoderGrid" role="listbox" aria-label="Danh sách khuôn mặt Hát Bội"></div>
+        <article class="decoder-panel" id="decoderPanel" aria-live="polite">
+          <div class="decoder-visual">
+            <img id="decoderMaskImg" src="assets/mask-hero.webp" alt="Mặt nạ Hát Bội">
+          </div>
+          <div class="decoder-info">
+            <span class="decoder-badge" id="decoderBadge">SẮC ĐỎ</span>
+            <h3 id="decoderName">Mặt Đỏ Trung Nghĩa</h3>
+            <p class="decoder-meaning" id="decoderMeaning"></p>
+            <div class="decoder-meta">
+              <div class="decoder-box">
+                <h4 data-ui="decoderTraitsLabel">Đặc điểm nhận dạng</h4>
+                <ul id="decoderTraits"></ul>
+              </div>
+              <div class="decoder-box">
+                <h4 data-ui="decoderRolesLabel">Thông tin loại vai</h4>
+                <p id="decoderRoles"></p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- New Interactive Section 2: Xưởng vẽ mặt -->
+    <section class="studio-section reveal-on-scroll" id="mask-studio" aria-labelledby="studioTitle">
+      <div class="section-heading">
+        <p class="eyebrow" data-ui="studioEyebrow">TRẢI NGHIỆM SÁNG TẠO · XƯỞNG VẼ MẶT</p>
+        <h2 id="studioTitle" data-ui="studioTitle">Xưởng vẽ mặt Hát Bội</h2>
+        <p class="section-lead" data-ui="studioLead">Chọn dáng khuôn mặt, mẫu phối họa tiết và tô riêng từng vùng (Trán, Mắt, Má, Mũi, Miệng, Cằm) với 8 sắc màu truyền thống, sau đó tải về tác phẩm của riêng bạn.</p>
+      </div>
+
+      <div class="studio-layout">
+        <div class="studio-canvas-wrap">
+          <div class="studio-topbar">
+            <span class="studio-status" id="studioRegionLabel">Đang chọn vùng: <strong>Trán</strong></span>
+            <div class="studio-history">
+              <button class="studio-tool-btn" id="studioUndoBtn" type="button" disabled data-ui="studioUndo">↶ Hoàn tác</button>
+              <button class="studio-tool-btn" id="studioRedoBtn" type="button" disabled data-ui="studioRedo">↷ Làm lại</button>
+              <button class="studio-tool-btn" id="studioResetBtn" type="button" data-ui="studioReset">↺ Đặt lại</button>
+            </div>
+          </div>
+          <div class="studio-svg-stage" id="studioSvgStage" aria-label="Khung vẽ mặt nạ Hát Bội tương tác"></div>
+          <p class="studio-hint" data-ui="studioHint">Chạm trực tiếp vào Trán, Mắt, Má, Mũi, Miệng hoặc Cằm trên mặt nạ để tô màu đang chọn.</p>
+        </div>
+
+        <aside class="studio-controls">
+          <div class="control-group">
+            <h3 data-ui="studioShapeLabel">1. Dáng khuôn mặt</h3>
+            <div class="option-pills" id="shapeSelector"></div>
+          </div>
+          <div class="control-group">
+            <h3 data-ui="studioPatternLabel">2. Mẫu phối họa tiết</h3>
+            <div class="option-pills" id="patternSelector"></div>
+          </div>
+          <div class="control-group">
+            <h3 data-ui="studioRegionTitle">3. Chọn vùng tô nhanh</h3>
+            <div class="option-pills" id="regionSelector"></div>
+          </div>
+          <div class="control-group">
+            <h3 data-ui="studioColorLabel">4. Bảng 8 màu cơ bản</h3>
+            <div class="palette-grid" id="paletteGrid"></div>
+          </div>
+          <div class="studio-export-row">
+            <button class="submit-button studio-export-btn" id="studioExportBtn" type="button">
+              <span data-ui="studioExport">XUẤT TÁC PHẨM PNG</span>
+              <i>↓</i>
+            </button>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="heritage-gallery reveal-on-scroll" id="vinh-long-focus" aria-labelledby="galleryTitle">
+      <div class="gallery-heading">
+        <p class="eyebrow" data-ui="localEyebrow">DẤU ẤN HÁT BỘI VĨNH LONG</p>
+        <h2 id="galleryTitle" data-ui="localTitle">Hát Bội Vĩnh Long – Di sản đang được tiếp nối</h2>
+        <p data-ui="localDesc">Từ sân khấu Gánh Hát Bội Đồng Thinh tại Công Thần Miếu đến những nghệ nhân và khán giả hôm nay, mỗi cuộc gặp gỡ giúp câu chuyện Hát Bội tiếp tục được kể.</p>
+      </div>
+      <div class="gallery-grid">
+        <article class="gallery-card gallery-card--large tilt-card" data-depth="0.035">
+          <figure><img src="assets/final-stage.webp" alt="Các nghệ sĩ Gánh Hát Bội Đồng Thinh biểu diễn trên sân khấu" loading="lazy"></figure>
+          <div class="gallery-card-copy"><span>01</span><div><h3 data-ui="localCard1Title">Gánh Hát Bội Đồng Thinh</h3><p data-ui="localCard1Text">Tại Công Thần Miếu, nhóm có dịp thưởng thức trích đoạn biểu diễn và lắng nghe câu chuyện từ những người gắn bó với Hát Bội.</p></div></div>
+        </article>
+        <article class="gallery-card tilt-card" data-depth="0.055">
+          <figure><img src="assets/artist-profile.jpg" alt="Nghệ nhân Ưu tú Vũ Linh Tâm - Ngọn lửa không tắt" loading="lazy"></figure>
+          <div class="gallery-card-copy"><span>02</span><div><h3 data-ui="localCard2Title">Nghệ nhân Ưu tú Vũ Linh Tâm</h3><p data-ui="localCard2Text">Hơn 50 năm giữ lửa Hát Bội — gương mặt được nhóm tri ân qua những tư liệu và hình ảnh về hành trình gắn bó với Hát Bội tại Vĩnh Long.</p></div></div>
+        </article>
+        <article class="gallery-card tilt-card" data-depth="0.065">
+          <figure><img src="assets/Cháu Nội NNUT Vũ Linh Tâm - Đời thứ Năm Hát Bội Đồng Thinh.webp" alt="Cháu nội Nghệ nhân Ưu tú Vũ Linh Tâm - Đời thứ năm Gánh Hát Bội Đồng Thinh" loading="lazy"></figure>
+          <div class="gallery-card-copy"><span>03</span><div><h3 data-ui="localCard4Title">Thế hệ kế thừa – Đời thứ năm</h3><p data-ui="localCard4Text">Cháu nội Nghệ nhân Ưu tú Vũ Linh Tâm tiếp nối ngọn lửa nghề của gia đình tại Gánh Hát Bội Đồng Thinh.</p></div></div>
+        </article>
+        <article class="gallery-card tilt-card" data-depth="0.075">
+          <figure><img src="assets/group-visit.webp" alt="Nghệ sĩ Hát Bội giao lưu cùng khách tham quan tại Công Thần Miếu" loading="lazy"></figure>
+          <div class="gallery-card-copy"><span>04</span><div><h3 data-ui="localCard3Title">Hát Bội gặp gỡ công chúng</h3><p data-ui="localCard3Text">Những khoảnh khắc biểu diễn và giao lưu cho thấy di sản vẫn có thể chạm đến khán giả qua những trải nghiệm gần gũi.</p></div></div>
+        </article>
+      </div>
+      <div class="gallery-footnote"><span>✦</span><p data-ui="localFootnote">Hình ảnh được ghi nhận trong chuyến tìm hiểu Hát Bội Vĩnh Long của nhóm.</p></div>
+    </section>
+
+    <section class="below-book reveal-on-scroll" aria-label="Thông điệp của dự án">
+      <div class="below-mark">✧</div>
+      <p class="below-kicker" data-ui="belowKicker">GIỮ HỒN · ĐỔI HÌNH</p>
+      <p class="below-text" data-ui="belowText">Đổi cách kể để di sản đến gần hơn với người trẻ, nhưng luôn trân trọng tinh thần và tiếng nói của những người đang thực hành di sản.</p>
+    </section>
+
+    <section class="visitor-section reveal-on-scroll" id="visitor-voices">
+      <div class="visitor-heading">
+        <p class="eyebrow" data-ui="feedbackEyebrow">TIẾNG NÓI NGƯỜI XEM</p>
+        <h2 data-ui="feedbackTitle">Bạn cảm nhận điều gì?</h2>
+        <p data-ui="feedbackDesc">Một lời chia sẻ, một câu hỏi hay một góp ý đều có thể giúp câu chuyện Hát Bội được kể tiếp.</p>
+      </div>
+      <div class="visitor-layout">
+        <form class="feedback-form" id="feedbackForm">
+          <div class="form-topline"><span>✦</span><span data-ui="formLabel">SỔ LƯU BÚT DI SẢN</span><span>✦</span></div>
+          <label for="visitorName" data-ui="nameLabel">Tên của bạn</label>
+          <input id="visitorName" name="name" type="text" maxlength="48" autocomplete="name" placeholder="Bạn muốn được gọi là gì?" required>
+          <label for="visitorRating" data-ui="ratingLabel">Bạn đánh giá trải nghiệm này thế nào?</label>
+          <select id="visitorRating" name="rating">
+            <option value="5">★★★★★ · Rất ấn tượng</option>
+            <option value="4">★★★★☆ · Ấn tượng</option>
+            <option value="3">★★★☆☆ · Bình thường</option>
+            <option value="2">★★☆☆☆ · Cần cải thiện</option>
+            <option value="1">★☆☆☆☆ · Chưa phù hợp</option>
+          </select>
+          <label for="visitorThought" data-ui="thoughtLabel">Cảm nghĩ và góp ý</label>
+          <textarea id="visitorThought" name="thought" rows="4" maxlength="700" placeholder="Điều gì khiến bạn nhớ nhất về Hát Bội?" required></textarea>
+          <div class="form-bottom"><small data-ui="formNote">Phản hồi được lưu trên trình duyệt của thiết bị này.</small><button class="submit-button magnetic" type="submit"><span data-ui="submit">GỬI CẢM NGHĨ</span><i>↗</i></button></div>
+          <p class="form-success" id="formSuccess" role="status" aria-live="polite"></p>
+        </form>
+        <aside class="guestbook-card">
+          <div class="guestbook-top"><span class="guestbook-stamp">HB</span><div><p data-ui="guestbookKicker">LƯU BÚT KHÁN GIẢ</p><h3 data-ui="guestbookTitle">Những tiếng lòng được gửi lại</h3></div></div>
+          <div class="comments-list" id="commentsList"><p class="empty-comments" data-ui="emptyComments">Chưa có lời nhắn nào. Bạn có thể là người đầu tiên.</p></div>
+          <div class="guestbook-note"><span>❧</span><p data-ui="guestbookNote">Mỗi phản hồi là một góc nhìn. Xin cảm ơn bạn đã dành thời gian lắng nghe di sản.</p></div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="credits reveal-on-scroll">
+      <div class="credits-rule"><span></span><i>✦</i><span></span></div>
+      <p data-ui="creditsText">Tư liệu hình ảnh và video do nhóm thực hiện cung cấp. Nội dung về Hát Bội Vĩnh Long và Gánh Hát Bội Đồng Thinh cần được đối chiếu với tư liệu địa phương và ý kiến nghệ nhân trước khi xuất bản chính thức.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span class="footer-seal">HB</span>
+    <p>SAU LỚP PHẤN MÀU</p>
+    <small data-ui="footerText">HÁT BỘI VĨNH LONG · GÁNH HÁT ĐỒNG THINH · MỘT NGỌN LỬA ĐƯỢC TRAO TRUYỀN</small>
+  </footer>
+
+  <div class="museum-lightbox" id="museumLightbox" role="dialog" aria-modal="true" aria-labelledby="lightboxTitle" hidden>
+    <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+    <figure class="lightbox-dialog">
+      <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Đóng">✕</button>
+      <div class="lightbox-media">
+        <img id="lightboxImg" src="" alt="">
+      </div>
+      <figcaption class="lightbox-caption">
+        <span class="lightbox-kicker" id="lightboxKicker"></span>
+        <h3 id="lightboxTitle"></h3>
+        <p id="lightboxDesc"></p>
+      </figcaption>
+    </figure>
+  </div>
+  <script src="script.js" defer></script>
+</body>
+</html>
