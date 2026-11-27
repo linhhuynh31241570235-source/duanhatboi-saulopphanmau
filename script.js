@@ -23,7 +23,7 @@
   pair: 'assets/performer-pair.webp',
   localStage: 'assets/602337863_33549115661353641_2554198357669656418_n.jpg',
   troupeGroup: 'assets/601866007_33549116671353540_7077332285019542542_n.jpg',
-  video: 'assets/Video. Nhịp Trống & Chuyển Động.MOV',
+  video: 'assets/IMG_8185_converted.mp4',
   videoPoster: 'assets/hatboi-motion-poster.webp'};
 
 // Image orientation metadata: portrait images get a taller frame, landscape get a wider one
@@ -658,7 +658,7 @@ function pageImage(key){ return ASSETS[key] || ''; }
 function visualMarkup(p){
   if (p.visual === 'ornament') return `<div class="ornament-panel"><div class="ornament-seal">H<span style="font-size:.56em">B</span></div><p class="ornament-caption">${escapeHTML(p.caption||'')}</p></div>`;
   if (p.visual === 'masks') return `<div class="page-visual"><div class="mask-grid"><div class="mask-tile"><img src="${pageImage('maskHero')}" alt="Mặt nạ Hát Bội họa tiết đỏ, đen và xanh" loading="eager"></div><div class="mask-tile"><img src="${pageImage('maskPale')}" alt="Mặt nạ Hát Bội tông sáng" loading="eager"></div><div class="mask-tile"><img src="${pageImage('maskInk')}" alt="Mặt nạ Hát Bội sắc tối" loading="eager"></div><div class="mask-tile"><img src="${pageImage('maskGreen')}" alt="Mặt nạ Hát Bội sắc xanh" loading="eager"></div><p class="mask-grid-note">${escapeHTML(p.caption||'')}</p></div></div>`;
-  if (p.video) return `<div class="page-visual"><figure class="video-frame"><video controls playsinline preload="metadata" poster="${pageImage('videoPoster')}"><source src="${pageImage('video')}" type="video/quicktime"><source src="${pageImage('video')}" type="video/mp4">Your browser does not support video playback.</video><figcaption class="video-caption">${escapeHTML(p.caption||'')}</figcaption></figure></div>`;
+  if (p.video) return `<div class="page-visual"><figure class="video-frame"><video controls playsinline preload="metadata" poster="${pageImage('videoPoster')}"><source src="${pageImage('video')}" type="video/mp4">Your browser does not support video playback.</video><figcaption class="video-caption">${escapeHTML(p.caption||'')}</figcaption></figure></div>`;
   if (p.image) {
     const orient = IMAGE_ORIENT[p.image] || 'landscape';
     const contain = p.image === 'performer' ? ' photo-frame--contain' : '';

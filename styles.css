@@ -1073,3 +1073,68 @@ body{
   @keyframes bookClose{0%{transform:scale(1);opacity:1}100%{transform:scale(.82) translateY(10px);opacity:0}}
 }
 .page-nav.is-finish b:after{content:" ✦"}
+
+/* ===== V10: video dọc (nhịp trống & chuyển động) ===== */
+.craft-cinema{grid-template-columns:minmax(0,380px) minmax(0,1fr) !important;justify-content:center}
+.cinema-frame video{aspect-ratio:9/16 !important;object-fit:contain !important;max-height:82svh;background:#000}
+@media(max-width:960px){.craft-cinema{grid-template-columns:1fr !important}.cinema-frame{width:min(100%,340px);margin:0 auto}.cinema-frame video{max-height:70svh}}
+
+/* ===== V11: tối ưu tổng thể điện thoại ===== */
+@media(max-width:760px){
+  html,body{max-width:100%;overflow-x:hidden}
+  img,video,svg{max-width:100%}
+  html{scroll-padding-top:70px}
+  /* Trang chủ */
+  .intro-band{padding:34px 16px 16px !important}
+  .intro-band h1{font-size:clamp(32px,10vw,42px) !important;line-height:1.05}
+  .intro-copy{font-size:14px !important;line-height:1.65 !important}
+  .eyebrow{font-size:9.5px !important;letter-spacing:.2em !important}
+  .hero-actions,.intro-actions{display:flex;flex-direction:column;gap:10px;align-items:stretch}
+  .hero-pill{justify-content:center;min-height:48px;font-size:13.5px !important}
+  /* Tiêu đề & đoạn dẫn các mục */
+  .section-heading h2,.gallery-heading h2,.visitor-heading h2{font-size:clamp(28px,8vw,36px) !important;line-height:1.1}
+  .section-lead{font-size:14px !important;line-height:1.65 !important}
+  /* Video & thủ pháp */
+  .craft-showcase{padding-top:30px !important}
+  .craft-cinema{gap:16px !important;margin-bottom:24px !important}
+  .cinema-copy h3{font-size:24px !important;line-height:1.15}
+  .cinema-copy p{font-size:14px !important;line-height:1.65}
+  .craft-grid{grid-template-columns:repeat(2,minmax(0,1fr)) !important;gap:10px !important}
+  .craft-card h4,.craft-card h3{font-size:16px !important}
+  .craft-card p{font-size:12px !important;line-height:1.5}
+  /* Giải mã sắc diện */
+  .decoder-section{padding:30px 12px !important}
+  .decoder-layout{gap:14px !important}
+  .decoder-card-thumb{height:96px !important}
+  .decoder-card strong{font-size:15px !important}
+  .decoder-card span{font-size:11px !important}
+  /* Thư viện & lời nhắn */
+  .gallery-card-copy{padding:14px !important}
+  .gallery-card-copy p{font-size:13px !important;line-height:1.6}
+  .gallery-footnote p{font-size:14px}
+  .below-text{font-size:17px !important}
+  .visitor-layout{gap:16px !important}
+  .feedback-form,.guestbook-card{padding:18px !important;border-radius:14px}
+  .submit-button{width:100%;justify-content:center}
+  .comment-item p{font-size:13.5px;line-height:1.6}
+  .credits p{font-size:11.5px !important}
+  .site-footer small{font-size:9.5px !important;line-height:1.7}
+  /* Hình có thể phóng to: không cho kéo tràn */
+  .museum-lightbox img,#museumLightbox img{max-width:96vw;max-height:80svh;object-fit:contain}
+}
+
+/* ===== V12: sửa xưởng vẽ mặt bị tràn/cắt bên phải trên điện thoại ===== */
+@media(max-width:760px){
+  .studio-section{width:calc(100% - 14px) !important;max-width:100% !important;box-sizing:border-box;overflow-x:clip}
+  .studio-layout{grid-template-columns:minmax(0,1fr) !important;width:100%}
+  .studio-layout>*,.studio-controls,.control-group,.studio-canvas-wrap{min-width:0 !important;max-width:100% !important;box-sizing:border-box}
+  .studio-canvas-wrap{width:100%;overflow:hidden}
+  .studio-svg-stage{width:100% !important;max-width:100% !important;box-sizing:border-box;overflow:hidden}
+  .studio-svg-stage svg{width:auto !important;max-width:100%;height:100% !important;margin:0 auto}
+  .studio-topbar{min-width:0;overflow:hidden}
+  .studio-status{min-width:0;overflow:hidden;text-overflow:ellipsis}
+  .option-pills{max-width:100%;min-width:0}
+  .palette-grid{width:100%;grid-template-columns:repeat(4,minmax(0,1fr)) !important}
+  .swatch-btn{min-width:0;overflow:hidden}
+  .studio-export-btn{width:100% !important;max-width:100%;box-sizing:border-box;letter-spacing:.08em;font-size:12.5px !important;padding:14px 10px !important}
+}
